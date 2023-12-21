@@ -31,6 +31,7 @@ export default {
                 </a>
             </div>
         </section>
+
         <section id="mid_section">
             <div class="container">
 

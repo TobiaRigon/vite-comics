@@ -3,7 +3,66 @@
 
 export default {
     name: "AppHeader",
+    data() {
+        return {
+            links: [
+                {
+                    text: "Home",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Comics",
+                    url: "#",
+                    current: true,
+                },
+                {
+                    text: "Movies",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "TV",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Games",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Collectibles",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Video",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Fans",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "News",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Shop",
+                    url: "#",
+                    current: false,
+                },
+
+            ]
+        }
+    }
 }
+
+
 </script>
 
 <template>
@@ -13,66 +72,11 @@ export default {
             <div class="menu">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="">
-                                characters
-                            </a>
+                        <li v-for="link in links" :class="link.current ? 'active' : ''">
+                            <a :href="link.url">
+                                {{ link.text }}</a>
                         </li>
 
-                        <li class="active">
-                            <a href="">
-                                comics
-                            </a>
-                        </li>
-
-
-                        <li>
-                            <a href="">
-                                movies
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                tv
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                games
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                collections
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                videos
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                fans
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                news
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-                                shop
-                            </a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -116,6 +120,10 @@ export default {
                     text-transform: uppercase;
                     font-weight: 600;
                     color: #707070;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid $main_blue;
                 }
             }
 
