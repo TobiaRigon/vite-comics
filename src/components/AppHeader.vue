@@ -112,6 +112,8 @@ header {
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
+                    font-weight: 600;
+                    color: #707070;
                 }
             }
 
