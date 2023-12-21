@@ -15,12 +15,19 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <div class="container">
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
+  </div>
 </template>
 
 <style lang="scss" >
 @use "./style/general.scss" as *;
 @use "./style/partial/variables.scss" as *;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 </style>
