@@ -6,7 +6,9 @@ export default {
 
 <template>
     <main>
-        ciao main
+        <div class="container">
+            ciao main
+        </div>
     </main>
 </template>
 
