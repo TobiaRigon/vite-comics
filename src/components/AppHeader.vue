@@ -8,73 +8,76 @@ export default {
 
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt="dc-logo">
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">
-                            characters
-                        </a>
-                    </li>
+        <div class="container">
+            <img src="../assets/img/dc-logo.png" alt="dc-logo">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                characters
+                            </a>
+                        </li>
 
-                    <li class="active">
-                        <a href="">
-                            comics
-                        </a>
-                    </li>
+                        <li class="active">
+                            <a href="">
+                                comics
+                            </a>
+                        </li>
 
 
-                    <li>
-                        <a href="">
-                            movies
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                movies
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            tv
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                tv
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            games
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                games
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            collections
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                collections
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            videos
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                videos
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            fans
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                fans
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            news
-                        </a>
-                    </li>
+                        <li>
+                            <a href="">
+                                news
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="">
-                            shop
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <a href="">
+                                shop
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
     </header>
 </template>
 
@@ -82,7 +85,7 @@ export default {
 @import "../style/partial/variables.scss";
 
 
-header {
+.container {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -100,12 +103,11 @@ header {
             display: flex;
             gap: 20px;
             list-style-type: none;
-            margin: 40px 0;
 
 
 
             li {
-                padding: 40px 0;
+                padding: 55px 0;
 
 
 
