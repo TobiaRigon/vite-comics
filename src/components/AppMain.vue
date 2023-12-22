@@ -109,6 +109,8 @@ export default {
 @import "../style/partial/_variables.scss";
 
 
+
+
 .jumbo {
     max-height: 300px;
     overflow: hidden;
@@ -123,6 +125,13 @@ export default {
 main {
 
     background-color: $main_gray;
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 35px;
+    }
 
     // debug
     min-height: 200px;
