@@ -99,6 +99,7 @@ export default {
         <div class="container">
             <ListaComics v-for="(comic, i) in comics" :key="i" :details="comic" />
         </div>
+        <a href="">Load more</a>
     </main>
 </template>
 

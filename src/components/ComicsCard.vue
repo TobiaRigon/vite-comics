@@ -2,9 +2,16 @@
 
 export default {
     name: "ComicsCard",
+
+    props: {
+        details: Object
+    }
 }
 </script>
 
 <template>
-    ciao
+    <div class="prod_card">
+        <img :src="details.thumb" alt="">
+        <h3>{{ details.series }}</h3>
+    </div>
 </template>
