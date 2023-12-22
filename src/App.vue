@@ -9,8 +9,6 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-
-
   },
 
   data() {

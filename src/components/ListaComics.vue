@@ -1,15 +1,22 @@
 <script>
+import ComicsCard from './ComicsCard.vue'
+
+
 export default {
     name: "ListaComics",
+
+    components: {
+
+        ComicsCard,
+
+    },
 }
 </script>
 
 <template>
-    <div class="container">
-        ciao
-    </div>
+    <ComicsCard />
 </template>
 
 <style scoped lang="scss">
-@import "../style/partial/variables.scss";
+@import "../style/partial/_variables.scss";
 </style>
