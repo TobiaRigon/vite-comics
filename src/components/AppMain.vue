@@ -1,13 +1,21 @@
 <script>
+import ListaComics from './ListaComics.vue'
+
 export default {
     name: "AppMain",
+
+    components: {
+
+        ListaComics,
+
+    },
 }
 </script>
 
 <template>
     <main>
         <div class="container">
-            ciao main
+            <ListaComics />
         </div>
     </main>
 </template>

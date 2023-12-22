@@ -47,7 +47,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@import "../style/partial/variables.scss";
+@import "../style/partial/_variables.scss";
 
 #top_section {
     background-color: $main_blue;
