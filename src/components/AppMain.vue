@@ -97,9 +97,11 @@ export default {
     </div>
     <main>
         <div class="container">
+            <div id="current" class="badge">Current series</div>
             <ListaComics v-for="(comic, i) in comics" :key="i" :details="comic" />
+            <a href="" id="load" class="badge">Load more</a>
         </div>
-        <a href="">Load more</a>
+
     </main>
 </template>
 
@@ -125,12 +127,39 @@ export default {
 main {
 
     background-color: $main_gray;
+    padding-bottom: 30px;
+
+    .badge {
+
+        background-color: $main_blue;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+
+
+    }
+
+    #load {}
 
     .container {
         width: 80%;
         display: flex;
         flex-wrap: wrap;
         padding-top: 35px;
+        position: relative;
+        justify-content: center;
+
+        #current {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+        }
+
+
     }
 
     // debug
