@@ -14,20 +14,20 @@ export default {
                     <span>digital comics</span>
                 </a>
                 <a class="cell">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics icon">
-                    <span>digital comics</span>
+                    <img src="../assets/img/buy-comics-merchandise.png" alt="digital comics icon">
+                    <span>dc merchandise</span>
                 </a>
                 <a class="cell">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics icon">
-                    <span>digital comics</span>
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="digital comics icon">
+                    <span>subscription</span>
                 </a>
                 <a class="cell">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics icon">
-                    <span>digital comics</span>
+                    <img src="..\assets\img\buy-comics-shop-locator.png" alt="digital comics icon">
+                    <span>comic shop locator</span>
                 </a>
                 <a class="cell">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics icon">
-                    <span>digital comics</span>
+                    <img src="../assets/img/buy-dc-power-visa.svg" alt="digital comics icon">
+                    <span>dc power visa</span>
                 </a>
             </div>
         </section>
@@ -65,6 +65,7 @@ export default {
             img {
                 padding: 30px 0;
                 max-height: 150px;
+                max-width: 90px;
             }
 
             span {
